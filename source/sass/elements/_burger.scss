@@ -1,0 +1,138 @@
+@import "../abstr/mixin";
+
+.main {
+    @include tablet {
+        position: relative;
+        z-index: -1;
+    }
+}
+
+.burger-block {
+    position: relative;
+}
+
+.check-menu {
+    display: none;
+}
+
+.label-burger {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 40%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+
+.header .menu {
+    @include tablet {
+        flex-direction: column;
+        width: 100%;
+        width: calc(100% - 20px);
+        padding: 0 10px;
+        gap: 0.5rem;
+
+        & li {
+            border: 2px solid $main;
+            padding: 13px 20px;
+            border-radius: 28px;
+            font-size: 2.2rem;
+            // margin-bottom: 5px;
+        }
+    }
+}
+
+.check-menu:checked~.burger__icon::after {
+    @include tablet {
+        top: 39%;
+        transform: rotate(45deg) translate(0px, 50%);
+        transition: all 0.7s;
+    }
+}
+
+.check-menu:checked~.burger__icon .burger__icon-stripe {
+    @include tablet {
+        visibility: hidden;
+        opacity: 0;
+        transform: scale(0);
+        transition: all 0.8s linear;
+
+    }
+}
+
+.check-menu:checked~.burger__icon::before {
+    @include tablet {
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+        transition: all 0.7s;
+    }
+}
+
+.nav__menu,
+.header__btns {
+    @include tablet {
+        display: block;
+        top: 97px;
+        left: 120%;
+        position: fixed;
+        z-index:2;
+        width: 100%;
+        height: 100%;
+        transition: top 0.3s;
+        padding: 0;
+        margin: 0;
+        background: rgba(0, 0, 0, 0.6235294118);
+        transition: left 1s;
+    }
+}
+
+.header .header__btns {
+    @include tablet {
+        width: 100%;
+        display: block;
+        z-index: 2;
+        padding: 0 10px;
+        top: 451px;
+        background: rgba(0, 0, 0, 0);
+        // &>input {
+        //     width: calc(100% - 20px);
+        // }
+    }
+}
+
+.header .header__btns input {
+    @include tablet {
+        font-size: 16px;
+        padding: 3.9%;
+        margin-bottom: 1.5%;
+        width: calc(100% - 20px);
+    }
+}
+
+.nav__menu.active,
+.header__btns.active {
+    @include tablet {
+        display: block;
+        position: fixed;
+        top: 97px;
+        z-index: 2;
+        left: 0px;
+        // padding: 0;
+        // margin: 0;
+        width: 100%;
+        height: 100%;
+        background: #0000009f;
+        transition: left 1s;
+    }
+}
+
+
+.header__btns.active {
+    @include tablet {
+        top: 451px;
+        background: rgba(0, 0, 0, 0);
+    }
+}

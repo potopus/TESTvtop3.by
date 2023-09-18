@@ -1,0 +1,129 @@
+@import '../abstr/mixin';
+
+.blog {
+    color: $main-clean;
+    flex: 2.5 1;
+    max-width: 531px;
+    max-height: 595px;
+    margin: auto 0;
+    transform: translateY(-11%);
+    padding-right: 0.4%;
+
+    @include anima-size {
+        max-height: none;
+        transform: translateY(0%);
+    }
+
+    @include desktop {
+
+        flex: 1.9 1;
+    }
+
+    @include laptop {
+        margin: 33px auto 119px;
+        width: 80%;
+        max-width: none;
+    }
+
+}
+
+.blog__title {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5%;
+ @include laptop{
+    
+ }
+}
+
+.blog__wrapper {
+    background: $trans-light-mild;
+
+    height: 586px;
+    border: 3px solid $main-navy;
+    border-radius: 100px;
+    padding: 0 0.8rem 0 4.3%;
+    overflow: hidden;
+
+
+    & .article {
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        margin: 2.7% auto 0;
+
+        // padding-right: 16px;
+        @include laptop {
+            margin-top: 10px;
+        }
+    }
+
+    @include desktop{
+        max-height: 450px;
+    }
+
+    @include laptop {
+        height: 421px;
+        border-radius: 50px;
+    }
+}
+
+.blog__content {
+    padding: 0.3rem 16px 0 0;
+    height: 100%;
+    overflow-y: auto;
+
+    @include laptop {
+        text-align: left;
+    }
+}
+
+.article {
+    background-color: $main-deep;
+    padding: 1rem 4rem 1.1rem;
+    border-radius: 196px;
+
+    &:hover {
+        background-color: $main;
+        transition: all 0.7s;
+    }
+
+    & .public-date {
+        padding-top: 1rem;
+        font-size: 0.875rem;
+        line-height: 1rem;
+    }
+
+    @include tablet{
+        border-radius: 40px;
+        padding: 1.5rem 3.4rem;
+    }
+}
+
+// scrollbar
+.blog__content::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 8px;
+    height: 100px;
+}
+
+.blog__content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: $main;
+}
+
+.blog__content::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: $trans-light-mild;
+}
+
+.blog__content::-webkit-scrollbar-button {
+    height: 100px;
+    background-color: transparent;
+}
+
+.blog__content::-webkit-scrollbar-button-start {
+    display: block;
+}
