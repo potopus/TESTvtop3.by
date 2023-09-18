@@ -85,9 +85,14 @@ li {
 
 .logo {
     display: flex;
+    
 
     a {
         margin: auto;
+        border-bottom: 0px;
+        &:hover{
+            border-bottom: 0px;
+        }
     }
 
     .shot-logo-img {
