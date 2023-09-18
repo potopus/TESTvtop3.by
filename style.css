@@ -74,6 +74,10 @@ li {
 }
 .logo a {
   margin: auto;
+  border-bottom: 0px;
+}
+.logo a:hover {
+  border-bottom: 0px;
 }
 .logo .shot-logo-img {
   display: none;
@@ -667,7 +671,7 @@ li {
   .line1,
   .line2,
   .line3 {
-    width: 500%;
+    width: 290%;
     flex-basis: auto;
   }
 }
