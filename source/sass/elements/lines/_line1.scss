@@ -1,0 +1,103 @@
+@import "../../abstr/mixin";
+
+.gaming__chip {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    // padding-right: 4rem;
+    gap: 1rem;
+
+
+    @include anima-size {
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+    }
+
+    @include desktop {
+        margin: 0 1%;
+    }
+}
+
+.line1,
+.line2,
+.line3 {
+    // width: 22%;
+    width: 100px;
+    flex-basis: 100px;
+
+    & picture {
+        display: block;
+    }
+
+    @include anima-size {
+        display: flex;
+    }
+
+    @include laptop {
+        width: auto;
+        flex-basis: auto;
+    }
+
+}
+
+.marquee {
+    white-space: nowrap;
+    animation: marquee 12s linear infinite;
+    width: 100%;
+
+    @include anima-size {
+        display: flex;
+        animation: marquee-mobile 8s linear infinite;
+        animation-fill-mode: forwards;
+    }
+
+    @include tablet{
+        width: auto;
+    }
+
+
+}
+
+.line2 .marquee {
+    animation: marqueeD 10s linear infinite;
+
+    @include anima-size {
+        display: flex;
+        animation: marquee-mobileR 10s linear infinite;
+        animation-fill-mode: forwards;
+    }
+}
+
+
+.line3 .marquee {
+    animation-duration: 8s;
+
+    @include anima-size {
+        animation-duration: 12s;
+        animation-fill-mode: forwards;
+    }
+}
+
+
+
+.marquee img {
+    // width: 100px; /* Установите ширину изображений по вашему желанию */
+    height: auto;
+    width: 100%;
+    margin: 0 0px;
+
+
+    /* Расстояние между изображениями */
+    @include anima-size {
+        margin: 0 7px 0;
+    }
+
+    @include laptop {
+        width: auto;
+    }
+}
+
+/* Горизонтальная анимация для мобильных устройств  */
