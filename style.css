@@ -650,6 +650,13 @@ li {
   display: block;
 }
 @media screen and (max-width: 1024px) {
+  .line1 picture,
+  .line2 picture,
+  .line3 picture {
+    display: inline;
+  }
+}
+@media screen and (max-width: 1024px) {
   .line1,
   .line2,
   .line3 {
@@ -660,47 +667,51 @@ li {
   .line1,
   .line2,
   .line3 {
-    width: auto;
+    width: 500%;
     flex-basis: auto;
   }
 }
 
 .marquee {
   white-space: nowrap;
-  animation: marquee 12s linear infinite;
+  animation: marquee 8s linear infinite;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
   width: 100%;
 }
 @media screen and (max-width: 1024px) {
   .marquee {
-    display: flex;
-    animation: marquee-mobile 8s linear infinite;
+    animation: marquee-mobile 5000ms linear infinite;
+    -webkit-animation: marquee-mobile 5000ms linear infinite;
+    -moz-animation: marquee-mobile 5s linear infinite; /* FF <= 15 */
+    -o-animation: marquee-mobile 5000ms linear infinite; /* Opera 12 */
+    -ms-animation: marquee-mobile 5000ms linear infinite;
     animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
   }
 }
-@media screen and (max-width: 768px) {
-  .marquee {
-    width: auto;
-  }
-}
-
 .line2 .marquee {
-  animation: marqueeD 10s linear infinite;
+  animation: marqueeD 5s linear infinite;
+  -webkit-animation-fill-mode: forwards;
 }
 @media screen and (max-width: 1024px) {
   .line2 .marquee {
     display: flex;
-    animation: marquee-mobileR 10s linear infinite;
+    animation: marquee-mobileR 5s linear infinite;
+    -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
   }
 }
 
 .line3 .marquee {
   animation-duration: 8s;
+  -webkit-animation-fill-mode: forwards;
 }
 @media screen and (max-width: 1024px) {
   .line3 .marquee {
     animation-duration: 12s;
     animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
   }
 }
 
@@ -722,13 +733,6 @@ li {
 }
 
 /* Горизонтальная анимация для мобильных устройств  */
-@media screen and (max-width: 768px) {
-  .main {
-    position: relative;
-    z-index: -1;
-  }
-}
-
 .burger-block {
   position: relative;
 }
@@ -1175,10 +1179,10 @@ template {
 }
 @keyframes marquee-mobile {
   0% {
-    transform: translateX(-18%);
+    transform: translateX(-10%);
   }
   100% {
-    transform: translateX(-118%);
+    transform: translateX(-110%);
   }
 }
 @keyframes marquee-mobileR {
