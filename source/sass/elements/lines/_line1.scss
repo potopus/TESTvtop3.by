@@ -30,6 +30,9 @@
 
     & picture {
         display: block;
+        @include laptop{
+            display: inline;
+        }
     }
 
     @include anima-size {
@@ -37,7 +40,7 @@
     }
 
     @include laptop {
-        width: auto;
+        width: 500%;
         flex-basis: auto;
     }
 
@@ -45,28 +48,37 @@
 
 .marquee {
     white-space: nowrap;
-    animation: marquee 12s linear infinite;
+    animation: marquee 8s linear infinite;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
     width: 100%;
 
     @include anima-size {
-        display: flex;
-        animation: marquee-mobile 8s linear infinite;
+        // display: flex;
+        animation: marquee-mobile 5000ms linear infinite;
+        -webkit-animation: marquee-mobile 5000ms linear infinite;
+        -moz-animation: marquee-mobile 5s linear infinite; /* FF <= 15 */
+        -o-animation: marquee-mobile 5000ms linear infinite; /* Opera 12 */
+        -ms-animation: marquee-mobile 5000ms linear infinite;
         animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
     }
 
     @include tablet{
-        width: auto;
+        // width: auto;
     }
 
 
 }
 
 .line2 .marquee {
-    animation: marqueeD 10s linear infinite;
+    animation: marqueeD 5s linear infinite;
+    -webkit-animation-fill-mode: forwards;
 
     @include anima-size {
         display: flex;
-        animation: marquee-mobileR 10s linear infinite;
+        animation: marquee-mobileR 5s linear infinite;
+        -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
     }
 }
@@ -74,10 +86,12 @@
 
 .line3 .marquee {
     animation-duration: 8s;
+    -webkit-animation-fill-mode: forwards;
 
     @include anima-size {
         animation-duration: 12s;
         animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
     }
 }
 
