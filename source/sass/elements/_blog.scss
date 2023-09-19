@@ -25,6 +25,15 @@
         max-width: none;
     }
 
+    @include tablet {
+        width: 90%;
+        margin: 40px auto 119px;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
+
 }
 
 .blog__title {
@@ -34,9 +43,11 @@
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 5%;
- @include laptop{
-    
- }
+
+    @include tablet {
+        font-size: 3.8rem;
+        padding-bottom: 9%;
+    }
 }
 
 .blog__wrapper {
@@ -58,15 +69,25 @@
         @include laptop {
             margin-top: 10px;
         }
+
+        @include tablet {
+            font-size: 1.96rem;
+            line-height: 2.4rem;
+            margin-top: 8px;
+        }
     }
 
-    @include desktop{
+    @include desktop {
         max-height: 450px;
     }
 
     @include laptop {
-        height: 421px;
+        height: 417px;
         border-radius: 50px;
+    }
+
+    @include tablet {
+        padding: 0 0.4rem 0 2.5%;
     }
 }
 
@@ -77,6 +98,10 @@
 
     @include laptop {
         text-align: left;
+    }
+
+    @include tablet {
+        padding: 0rem 6px 0 0;
     }
 }
 
@@ -94,11 +119,16 @@
         padding-top: 1rem;
         font-size: 0.875rem;
         line-height: 1rem;
+
+        @include tablet {
+            font-size: 1.8rem;
+            line-height: 1.2rem;
+        }
     }
 
-    @include tablet{
+    @include tablet {
         border-radius: 40px;
-        padding: 1.5rem 3.4rem;
+        padding: 2rem 4.1rem 2.5rem;
     }
 }
 
@@ -107,6 +137,10 @@
     -webkit-appearance: none;
     width: 8px;
     height: 100px;
+
+    @include tablet {
+        width: 4px;
+    }
 }
 
 .blog__content::-webkit-scrollbar-thumb {
