@@ -10,43 +10,24 @@
   /* Стили для переключателя */
   .switch .slider {
     position: relative;
-    // display: inline-block;
     width: fit-content;
     height: 20px;
-    // background-color: #ccc;
-    // border-radius: 20px;
   }
   
-  /* Стили для активного состояния переключателя */
-  .switch input:checked + .slider {
-    // background-color: #2196F3;
-  }
   
   /* Стили для метки (надписи) */
   #languageLabel {
     font-size: 1rem;
-    // margin-left: 10px;
     line-height: 1.25rem;
     text-transform: uppercase;
   }
 
 .switch .slider::before {
     content: "ru";
-    // position: absolute;
-    // font-size: 1rem;
-    // margin-left: 10px;
-    // line-height: 1.25rem;
     text-transform: uppercase;
-    // left: 5px;
-    // top: 2px;
-    // height: 16px;
-    // width: 16px;
-    // background-color: white;
-    // border-radius: 50%;
     transition: 0.7s;
   }
   
   .switch input:checked + .slider::before {
     content: "en";
-    // transform: translateX(20px);
   }

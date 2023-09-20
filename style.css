@@ -607,7 +607,6 @@ li {
   height: 20px;
 }
 
-/* Стили для активного состояния переключателя */
 /* Стили для метки (надписи) */
 #languageLabel {
   font-size: 1rem;
@@ -907,7 +906,7 @@ div.fancybox__backdrop {
   .line1,
   .line2,
   .line3 {
-    width: 890%;
+    width: 891%;
   }
 }
 
@@ -934,7 +933,7 @@ div.fancybox__backdrop {
 }
 @media screen and (max-width: 320px) {
   .line3 {
-    width: 910%;
+    width: 911%;
   }
 }
 
@@ -959,6 +958,7 @@ div.fancybox__backdrop {
     width: 100%;
   }
 }
+
 .line2 .marquee {
   animation: marqueeD 5s linear infinite;
   -webkit-animation-fill-mode: forwards;
@@ -1006,7 +1006,6 @@ div.fancybox__backdrop {
   }
 }
 
-/* Горизонтальная анимация для мобильных устройств  */
 .burger-block {
   position: relative;
 }
