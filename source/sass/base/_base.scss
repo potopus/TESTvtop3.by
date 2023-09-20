@@ -139,6 +139,7 @@ li {
     flex-direction: column;
     padding-top: 0.9%;
     min-height: 98.7%;
+    overflow-x: hidden;
 
     @include anima-size {
         overflow-x: hidden;
@@ -362,6 +363,7 @@ li {
     display: flex;
     justify-content: space-between;
     gap: 4rem;
+    position: relative;
 
     & .title {
         margin: auto 0;
@@ -399,9 +401,11 @@ li {
             padding: 3.56% 12.26%;
 
             @include tablet {
-                padding: 6.56% 18.36%;
+                padding: 19px 55px;
             }
         }
+
+
 
         @include anima-size {
             flex: 1;
@@ -451,8 +455,57 @@ li {
     }
 }
 
+.title,
+.blog {
+    position: relative;
+    z-index: 3;
+}
+
+.main::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(180deg, transparent 0%, rgba(17, 10, 29, 1) 100%);
+
+    @include laptop {
+        display: none;
+    }
+}
+
 .title__color {
     color: $main;
+}
+
+.dot__light-up{
+    pointer-events: none;
+    width: $dot-up-width;
+    height: $dot-up-height;
+    position: absolute;
+    transform: rotate(-54.311deg);
+    z-index: 3;
+    background: linear-gradient(180deg, #478BF9 0%, rgba(71, 139, 249, 0.41) 100%);
+    opacity: 0.55;
+    filter: blur($dot-up-blur);
+    left: calc(84px + (75 - 84) * (100vw - 320px) / (1920 - 320));
+    top: calc(-100px + (-400 + 100) * (100vw - 320px) / (1920 - 320));
+    border-radius: 50%;
+}
+
+.dot__light-down {
+    pointer-events: none;
+    position: absolute;
+    bottom: calc(0px + (0 - 141) * (100vw - 320px) / (1920 - 320));
+    right: calc(-97px + (-189 + 97) * (100vw - 320px) / (1920 - 320));
+    z-index: 5;
+    width: $dot-down-size;
+    height: $dot-down-size;
+    border-radius: 50%;
+    opacity: 0.7;
+    background: linear-gradient(256deg, #478BF9 0%, #9DADF2 100%);
+    filter: blur($dot-down-blur);
 }
 
 .footer {
@@ -464,6 +517,8 @@ li {
     border-right: 4px solid $main;
     border-left: 4px solid $main;
     background-color: $main-dark;
+    position: relative;
+    z-index: 3;
 
     @include tablet {
         border-radius: 50px 50px 0px 0px;
@@ -546,7 +601,7 @@ li {
             transition: all 0.7s;
         }
 
-        @include tablet{
+        @include tablet {
             width: 3.1rem;
             height: 3.1rem;
         }
@@ -567,7 +622,7 @@ li {
         width: 50%;
     }
 
-    @include tablet{
+    @include tablet {
         gap: 10px;
     }
 }

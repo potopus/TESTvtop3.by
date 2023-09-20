@@ -72,7 +72,7 @@
 .header__btns {
     @include tablet {
         display: block;
-        top: 97px;
+        top: calc(97px + (115 - 97) * (100vw - 320px) / (768 - 320));
         left: 120%;
         position: fixed;
         z-index: 2;
@@ -92,7 +92,7 @@
         display: block;
         z-index: 2;
         padding: 0 10px;
-        top: 451px;
+        top: calc(451px + (510 - 451) * (100vw - 320px) / (768 - 320));
         background: rgba($main-dark, 0);
         // &>input {
         //     width: calc(100% - 20px);

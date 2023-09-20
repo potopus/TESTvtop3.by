@@ -16,3 +16,10 @@ $laptop:1024px;
 $desktop: 1280px;
 $desktop-wide: 1440px;
 $anima-size:1024px;
+
+$dot-down-size: calc(240px + (574 - 240) * (100vw - 320px) / (1920 - 320));
+$dot-down-blur: calc(135px + (325 - 135) * (100vw - 320px) / (1920 - 320));
+
+$dot-up-width: calc(81px + (226 - 81) * (100vw - 320px) / (1920 - 320));
+$dot-up-height: calc(466px + (1302 - 466) * (100vw - 320px) / (1920 - 320));
+$dot-up-blur: calc(39px + (150 - 39) * (100vw - 320px) / (1920 - 320));

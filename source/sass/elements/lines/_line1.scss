@@ -20,7 +20,7 @@
         margin: 0 1%;
     }
 
-    @include tablet{
+    @include tablet {
         gap: 0.6rem;
     }
 }
@@ -34,7 +34,8 @@
 
     & picture {
         display: block;
-        @include laptop{
+
+        @include laptop {
             display: inline;
         }
     }
@@ -47,7 +48,26 @@
         width: 290%;
         flex-basis: auto;
     }
+}
 
+.line1 {
+    opacity: 20%;
+
+    @include laptop {
+        opacity: 40%;
+    }
+}
+
+.line2 {
+    opacity: 60%;
+}
+
+.line3 {
+    opacity: 40%;
+
+    @include laptop {
+        opacity: 20%;
+    }
 }
 
 .marquee {
@@ -61,14 +81,16 @@
         // display: flex;
         animation: marquee-mobile 5000ms linear infinite;
         -webkit-animation: marquee-mobile 5000ms linear infinite;
-        -moz-animation: marquee-mobile 5s linear infinite; /* FF <= 15 */
-        -o-animation: marquee-mobile 5000ms linear infinite; /* Opera 12 */
+        -moz-animation: marquee-mobile 5s linear infinite;
+        /* FF <= 15 */
+        -o-animation: marquee-mobile 5000ms linear infinite;
+        /* Opera 12 */
         -ms-animation: marquee-mobile 5000ms linear infinite;
         animation-fill-mode: forwards;
         -webkit-animation-fill-mode: forwards;
     }
 
-    @include tablet{
+    @include tablet {
         // width: auto;
     }
 
