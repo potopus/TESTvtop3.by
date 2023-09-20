@@ -9,6 +9,10 @@
     transform: translateY(-11%);
     padding-right: 0.4%;
 
+    a{
+        color: $light;
+    }
+
     @include anima-size {
         max-height: none;
         transform: translateY(0%);
@@ -132,6 +136,41 @@
     }
 }
 
+.full__article{
+    display: inline-block;
+    width: calc(300px + (768 - 300) * (100vw - 320px) / (1920 - 320));
+    border: 2px solid $main;
+    border-radius: 25px;
+    background: $main-dark;
+    h2{
+        font-size: 2.1rem;
+    }
+
+    p{
+        font-size: 1.5rem;
+    }
+
+    & p:last-of-type{
+        padding-bottom: 5%;
+    }
+
+    a{
+        font-size: 1rem;
+    }
+}
+div.fancybox-content {
+    padding: 28px;
+    background: $main-dark;
+}
+
+.fancybox-is-open div.fancybox-bg  {
+    background-color: $main-deep;
+    opacity: 0.95;
+}
+
+.fancybox-skin{
+    // background:rgba($main-deep,0.5);
+}
 // scrollbar
 .blog__content::-webkit-scrollbar {
     -webkit-appearance: none;

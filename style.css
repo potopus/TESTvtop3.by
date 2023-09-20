@@ -15,6 +15,10 @@ body {
   font-weight: 400;
 }
 
+body.fancybox-active {
+  overflow: hidden;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -315,6 +319,8 @@ li {
 .main .title {
   margin: auto 0;
   transform: translateY(-13%);
+  z-index: 1;
+  position: relative;
 }
 .main .title .h1 {
   font-size: calc(5.6rem + 10.9 * (100vw - 1024px) / 896);
@@ -444,7 +450,7 @@ li {
   position: absolute;
   bottom: calc(0px + -141 * (100vw - 320px) / 1600);
   right: calc(-97px + -92 * (100vw - 320px) / 1600);
-  z-index: 5;
+  z-index: 3;
   width: calc(240px + 334 * (100vw - 320px) / 1600);
   height: calc(240px + 334 * (100vw - 320px) / 1600);
   border-radius: 50%;
@@ -613,6 +619,9 @@ li {
   transform: translateY(-11%);
   padding-right: 0.4%;
 }
+.blog a {
+  color: #ffffff;
+}
 @media screen and (max-width: 1024px) {
   .blog {
     max-height: none;
@@ -743,6 +752,36 @@ li {
   }
 }
 
+.full__article {
+  display: inline-block;
+  width: calc(300px + 468 * (100vw - 320px) / 1600);
+  border: 2px solid #478BF9;
+  border-radius: 25px;
+  background: #110A1D;
+}
+.full__article h2 {
+  font-size: 2.1rem;
+}
+.full__article p {
+  font-size: 1.5rem;
+}
+.full__article p:last-of-type {
+  padding-bottom: 5%;
+}
+.full__article a {
+  font-size: 1rem;
+}
+
+div.fancybox-content {
+  padding: 28px;
+  background: #110A1D;
+}
+
+.fancybox-is-open div.fancybox-bg {
+  background-color: #1E1231;
+  opacity: 0.95;
+}
+
 .blog__content::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 8px;
@@ -857,7 +896,7 @@ li {
 
 .marquee {
   white-space: nowrap;
-  animation: marquee 8s linear infinite;
+  animation: marquee 10s linear infinite;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
   width: 100%;
@@ -984,7 +1023,7 @@ li {
     top: calc(97px + 18 * (100vw - 320px) / 448);
     left: 120%;
     position: fixed;
-    z-index: 2;
+    z-index: 4;
     width: 100%;
     height: 100%;
     transition: top 0.3s;
@@ -999,7 +1038,7 @@ li {
   .header .header__btns {
     width: 100%;
     display: block;
-    z-index: 2;
+    z-index: 4;
     padding: 0 10px;
     top: calc(451px + 59 * (100vw - 320px) / 448);
     background: rgba(17, 10, 29, 0);
@@ -1026,7 +1065,7 @@ li {
   .header__btns.active {
     display: block;
     position: fixed;
-    z-index: 2;
+    z-index: 4;
     left: 0px;
     width: 100%;
     height: 100%;
