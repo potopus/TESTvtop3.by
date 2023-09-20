@@ -33,3 +33,27 @@ header__btns.addEventListener("click", function () {
         burgerInput.checked = false;
     }
 })
+
+
+const scrollableContainer = document.querySelector('.blog__content');
+const absoluteBlock = document.querySelector('.dot__light-down');
+
+// scrollableContainer.addEventListener('scroll', () => {
+//   const scrollTop = scrollableContainer.scroll;
+//   // Измените положение .absolute-block на основе значения scrollTop
+//   absoluteBlock.style.top = `${scrollTop}px`;
+// });
+
+
+
+scrollableContainer.addEventListener('scroll', () => {
+  const scrollTop = scrollableContainer.scrollTop;
+  const containerHeight = scrollableContainer.clientHeight; // Высота видимой области контейнера
+  const absoluteBlockHeight = absoluteBlock.clientHeight; // Высота блока .absolute-block
+
+  // Рассчитываем новое значение для bottom
+  const newBottom = containerHeight - scrollTop - absoluteBlockHeight;
+
+  // Применяем новое значение к свойству bottom
+  absoluteBlock.style.bottom = `${newBottom}px`;
+});
