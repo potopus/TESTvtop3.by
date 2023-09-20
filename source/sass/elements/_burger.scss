@@ -75,7 +75,7 @@
         top: calc(97px + (115 - 97) * (100vw - 320px) / (768 - 320));
         left: 120%;
         position: fixed;
-        z-index: 2;
+        z-index: 4;
         width: 100%;
         height: 100%;
         transition: top 0.3s;
@@ -90,7 +90,7 @@
     @include tablet {
         width: 100%;
         display: block;
-        z-index: 2;
+        z-index: 4;
         padding: 0 10px;
         top: calc(451px + (510 - 451) * (100vw - 320px) / (768 - 320));
         background: rgba($main-dark, 0);
@@ -121,7 +121,7 @@
         display: block;
         position: fixed;
 
-        z-index: 2;
+        z-index: 4;
         left: 0px;
         // padding: 0;
         // margin: 0;

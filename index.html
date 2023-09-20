@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap"
         rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <title>Test</title>
 </head>
 
@@ -295,8 +297,6 @@
                             <img src="./source/img/line1/sShield.png" alt="chip">
                         </picture>
                     </div>
-                   
-                    
                 </div>
                 <div class="line2">
                     <div class="marquee">
@@ -704,7 +704,7 @@
                             <source media="(min-width: 1025px)" srcset="./source/img/line1/Soccer.png">
 
                             <!-- Изображение для узкого экрана (маленькое разрешение) -->
-                            
+
                             <img src="./source/img/line1/sSoccer.png" alt="chip">
                         </picture>
                         <picture>
@@ -830,34 +830,53 @@
                 <div class="blog__wrapper">
                     <div class="blog__content">
                         <div class="article">
-                            <div class="content">
-                                Payment methods: Skrill, Neteller, webmoney, Bank transfer
+                            <a  data-fancybox href="#hidden1">
+                                <div class="content">
+                                    Payment methods: Skrill, Neteller, webmoney, Bank transfer
+                                </div>
+                                <div class="public-date">10.02.2023</div>
+                            </a>
+                            <div style="display: none; width: 600px;" class="full__article" id="hidden1">
+                                <h2>Any of your articles can be here</h2>
+                                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, minima.</p>
+                                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, minima.</p>
+                                <a class="hidden_links" href="https://potopus.github.io/rsschool-cv/#projects" target="_blank" rel="noopener noreferrer">&copy; All my projects can be viewed in my CV &copy; </a><br><br>
+                                <a href="tel:+375333052208"> Phone: +375-33-305-22-08</a><br><br>
+                                <a href="https://t.me/PoulBut">Link to Telegram: @PoulBut</a><br><br>
+                                <a href="mailto:paveldelo@yandex.ru"> Link to my email: paveldelo@yandex.ru</a>
                             </div>
-                            <div class="public-date">10.02.2023</div>
                         </div>
                         <div class="article">
-                            <div class="content">
-                                Payment methods: Skrill, Neteller, webmoney, Bank transfer
-                            </div>
-                            <div class="public-date">10.02.2023</div>
+                            <a href="#">
+                                <div class="content">
+                                    Payment methods: Skrill, Neteller, webmoney, Bank transfer
+                                </div>
+                                <div class="public-date">10.02.2023</div>
+                            </a>
                         </div>
                         <div class="article">
-                            <div class="content">
-                                Payment methods: Skrill, Neteller, webmoney, Bank transfer
-                            </div>
-                            <div class="public-date">10.02.2023</div>
+                            <a href="#">
+                                <div class="content">
+                                    Payment methods: Skrill, Neteller, webmoney, Bank transfer
+                                </div>
+                                <div class="public-date">10.02.2023</div>
+                            </a>
                         </div>
                         <div class="article">
-                            <div class="content">
-                                Payment methods: Skrill, Neteller, webmoney, Bank transfer
-                            </div>
-                            <div class="public-date">10.02.2023</div>
+                            <a href="#">
+                                <div class="content">
+                                    Payment methods: Skrill, Neteller, webmoney, Bank transfer
+                                </div>
+                                <div class="public-date">10.02.2023</div>
+                            </a>
                         </div>
                         <div class="article">
-                            <div class="content">
-                                Payment methods: Skrill, Neteller, webmoney, Bank transfer
-                            </div>
-                            <div class="public-date">10.02.2023</div>
+                            <a href="#">
+                                <div class="content">
+                                    Payment methods: Skrill, Neteller, webmoney, Bank transfer
+                                </div>
+                                <div class="public-date">10.02.2023</div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -890,7 +909,9 @@
             </div>
         </div>
     </div>
-<script src="./source/js/main.js"></script>
+    <script src="./source/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </body>
 
 </html>
