@@ -907,8 +907,7 @@ div.fancybox__backdrop {
   .line1,
   .line2,
   .line3 {
-    width: 880%;
-  }
+    width: 890%;
 }
 
 .line1 {
@@ -934,7 +933,7 @@ div.fancybox__backdrop {
 }
 @media screen and (max-width: 320px) {
   .line3 {
-    width: 900%;
+    width: 910%;
   }
 }
 
@@ -956,7 +955,8 @@ div.fancybox__backdrop {
     -ms-animation: marquee-mobile 5000ms linear infinite;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
-    width: 4000%;
+
+    width: 100%;
   }
 }
 .line2 .marquee {

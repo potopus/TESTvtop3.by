@@ -52,7 +52,7 @@
         width: 370%;
     }
     @include mobile{
-        width:880%;
+        width:890%;
     }
 }
 
@@ -75,8 +75,7 @@
         opacity: 20%;
     }
     @include mobile{
-        width:900%;
-    }
+        width:910%;
 }
 
 .marquee {
@@ -97,7 +96,8 @@
         -ms-animation: marquee-mobile 5000ms linear infinite;
         animation-fill-mode: forwards;
         -webkit-animation-fill-mode: forwards;
-        width: 4000%;
+
+        width: 100%;
     }
 
     @include tablet {
