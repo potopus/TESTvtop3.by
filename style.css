@@ -178,6 +178,7 @@ li {
   }
 }
 .header .header__btns div, .header .header__btns input {
+  cursor: pointer;
   padding: 4.2%;
   border: 2px solid #9DADF2;
   color: #ffffff;
@@ -185,22 +186,31 @@ li {
   border-radius: 24px;
   text-transform: uppercase;
 }
+.header .header__btns .switch {
+  border: 0px;
+}
 .header .header__btns input:last-child {
   background-color: #478BF9;
   border: 0px;
 }
 .header .header__btns .header__toggle {
   display: flex;
-  padding-left: 3.6%;
+  border: 2px solid #9DADF2;
+  border-radius: 24px;
+  flex-basis: 61px;
+  padding: 0 1.4%;
 }
 .header .header__btns .header__toggle img {
   width: 1rem;
   height: 1rem;
   margin: auto;
+  margin-left: 9%;
 }
-.header .header__btns .header__toggle > :not(.header__toggle) {
-  flex: 1;
-  flex-basis: auto;
+@media screen and (max-width: 1280px) {
+  .header .header__btns .header__toggle img {
+    width: 16px;
+    height: 16px;
+  }
 }
 .header .header__btns .header__toggle .space {
   width: 8px;
@@ -211,6 +221,11 @@ li {
 @media screen and (max-width: 768px) {
   .header .header__btns .header__toggle {
     display: none;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .header .header__btns {
+    width: 22%;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -318,7 +333,7 @@ li {
 }
 .main .title {
   margin: auto 0;
-  transform: translateY(-13%);
+  transform: translateY(-14%);
   z-index: 1;
   position: relative;
 }
@@ -752,23 +767,24 @@ li {
   }
 }
 
-.full__article {
+.full__article.fancybox__content {
+  color: #ffffff;
   display: inline-block;
   width: calc(300px + 468 * (100vw - 320px) / 1600);
   border: 2px solid #478BF9;
   border-radius: 25px;
   background: #110A1D;
 }
-.full__article h2 {
+.full__article.fancybox__content h2 {
   font-size: 2.1rem;
 }
-.full__article p {
+.full__article.fancybox__content p {
   font-size: 1.5rem;
 }
-.full__article p:last-of-type {
+.full__article.fancybox__content p:last-of-type {
   padding-bottom: 5%;
 }
-.full__article a {
+.full__article.fancybox__content a {
   font-size: 1rem;
 }
 
@@ -777,9 +793,18 @@ div.fancybox-content {
   background: #110A1D;
 }
 
-.fancybox-is-open div.fancybox-bg {
+div.fancybox__backdrop {
   background-color: #1E1231;
   opacity: 0.95;
+}
+
+.fancybox__content > button.f-button.is-close-btn {
+  border: 2px solid #478BF9;
+  border-radius: 50%;
+  top: -47px;
+}
+.fancybox__content > button.f-button.is-close-btn:hover {
+  color: #478BF9;
 }
 
 .blog__content::-webkit-scrollbar {

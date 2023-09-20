@@ -136,7 +136,8 @@
     }
 }
 
-.full__article{
+.full__article.fancybox__content{
+    color: $light;
     display: inline-block;
     width: calc(300px + (768 - 300) * (100vw - 320px) / (1920 - 320));
     border: 2px solid $main;
@@ -158,19 +159,27 @@
         font-size: 1rem;
     }
 }
+
 div.fancybox-content {
     padding: 28px;
     background: $main-dark;
 }
 
-.fancybox-is-open div.fancybox-bg  {
+div.fancybox__backdrop  {
     background-color: $main-deep;
     opacity: 0.95;
 }
 
-.fancybox-skin{
-    // background:rgba($main-deep,0.5);
+.fancybox__content>button.f-button.is-close-btn{
+    border: 2px solid $main;
+    border-radius: 50%;
+    top: -47px;
+    &:hover{
+        color: $main;
+    }
 }
+
+
 // scrollbar
 .blog__content::-webkit-scrollbar {
     -webkit-appearance: none;
