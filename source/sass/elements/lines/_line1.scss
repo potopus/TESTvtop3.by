@@ -29,13 +29,20 @@
 .line2,
 .line3 {
     width: 100px;
+    height: 100%;
     flex-basis: 100px;
 
     & picture {
         display: block;
+        margin: 24px 0;
+
+        @include desktop-wide {
+            margin: 12px 0;
+        }
 
         @include laptop {
             display: inline;
+            margin: 0px 7px;
         }
     }
 
@@ -47,11 +54,13 @@
         width: 300%;
         flex-basis: auto;
     }
-    @include tablet{
+
+    @include tablet {
         width: 370%;
     }
-    @include mobile{
-        width:891%;
+
+    @include mobile {
+        width:899%;
     }
 }
 
@@ -73,8 +82,13 @@
     @include laptop {
         opacity: 21%;
     }
-    @include mobile{
-        width:911%;
+
+    @include tablet {
+        width: 377%;
+    }
+
+    @include mobile {
+        width: 911%;
     }
 }
 
@@ -84,6 +98,7 @@
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     width: 100%;
+    height: auto;
 
     @include anima-size {
         animation: marquee-mobile 5000ms linear infinite;
@@ -95,8 +110,7 @@
         -ms-animation: marquee-mobile 5000ms linear infinite;
         animation-fill-mode: forwards;
         -webkit-animation-fill-mode: forwards;
-
-        width: 100%;
+        width: 200%;
     }
 }
 
@@ -135,12 +149,13 @@
     height: auto;
     width: 100%;
     margin: 0 0px;
+
     /* Расстояние между изображениями */
     @include anima-size {
-        margin: 0 7px 0;
+        margin: 0 0px 0;
     }
+
     @include laptop {
         width: auto;
     }
 }
-
