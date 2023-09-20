@@ -866,18 +866,28 @@ div.fancybox__backdrop {
 .line2,
 .line3 {
   width: 100px;
+  height: 100%;
   flex-basis: 100px;
 }
 .line1 picture,
 .line2 picture,
 .line3 picture {
   display: block;
+  margin: 24px 0;
+}
+@media screen and (max-width: 1440px) {
+  .line1 picture,
+  .line2 picture,
+  .line3 picture {
+    margin: 12px 0;
+  }
 }
 @media screen and (max-width: 1024px) {
   .line1 picture,
   .line2 picture,
   .line3 picture {
     display: inline;
+    margin: 0px 7px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -906,7 +916,7 @@ div.fancybox__backdrop {
   .line1,
   .line2,
   .line3 {
-    width: 891%;
+    width: 899%;
   }
 }
 
@@ -931,6 +941,11 @@ div.fancybox__backdrop {
     opacity: 21%;
   }
 }
+@media screen and (max-width: 768px) {
+  .line3 {
+    width: 377%;
+  }
+}
 @media screen and (max-width: 320px) {
   .line3 {
     width: 911%;
@@ -943,6 +958,7 @@ div.fancybox__backdrop {
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
   width: 100%;
+  height: auto;
 }
 @media screen and (max-width: 1024px) {
   .marquee {
@@ -955,7 +971,7 @@ div.fancybox__backdrop {
     -ms-animation: marquee-mobile 5000ms linear infinite;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
-    width: 100%;
+    width: 200%;
   }
 }
 
@@ -997,7 +1013,7 @@ div.fancybox__backdrop {
 }
 @media screen and (max-width: 1024px) {
   .marquee img {
-    margin: 0 7px 0;
+    margin: 0 0px 0;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -1450,7 +1466,7 @@ template {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-100%);
+    transform: translateY(-102%);
   }
 }
 @keyframes marqueeD {
@@ -1458,7 +1474,7 @@ template {
     transform: translateY(-130%);
   }
   100% {
-    transform: translateY(-30%);
+    transform: translateY(-28%);
   }
 }
 @keyframes marquee-mobile {
