@@ -205,13 +205,12 @@ li {
 
             @include desktop {
                 font-size: 0.8rem;
-
             }
-
         }
 
         & div,
         & input {
+            cursor: pointer;
             padding: 4.2%;
             border: 2px solid $additional-purple;
             color: #ffffff;
@@ -219,7 +218,10 @@ li {
             border-radius: 24px;
             text-transform: uppercase;
             // height: fit-content;
+        }
 
+        & .switch {
+            border: 0px;
         }
 
         & input:last-child {
@@ -229,17 +231,27 @@ li {
 
         .header__toggle {
             display: flex;
-            padding-left: 3.6%;
+            // padding-left: 3.6%;
+            border: 2px solid $additional-purple;
+            border-radius: 24px;
+            flex-basis: 61px;
+            padding: 0 1.4%;
 
             img {
                 width: 1rem;
                 height: 1rem;
                 margin: auto;
+                margin-left: 9%;
+
+                @include desktop {
+                    width: 16px;
+                    height: 16px;
+                }
             }
 
             &> :not(.header__toggle) {
-                flex: 1;
-                flex-basis: auto;
+                // flex: 1;
+                // flex-basis: auto;
             }
 
             .space {
@@ -252,6 +264,10 @@ li {
             @include tablet {
                 display: none;
             }
+        }
+
+        @include desktop-wide{
+            width: 22%;
         }
 
         @include desktop {
@@ -373,7 +389,7 @@ li {
 
     & .title {
         margin: auto 0;
-        transform: translateY(-13%);
+        transform: translateY(-14%);
         z-index: 1;
         position: relative;
 

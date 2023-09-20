@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap"
-        rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <link  rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">>
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap"></noscript>
+
+    <link  rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" onload="this.onload=null;this.rel='stylesheet'">>
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"></noscript>
+    <!-- <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" /> -->
     <title>Test</title>
 </head>
 
@@ -37,14 +38,14 @@
                     </ul>
                 </nav>
                 <div class=" header__btns ">
-                    <div class="header__toggle">
+                    <label class="header__toggle">
                         <img class="toggle__pic" src="./source/img/planet.png" alt="language toggle pic">
                         <div class="space"></div>
-                        <label class="switch">
+                        <div class="switch">
                             <input type="checkbox" id="languageToggle">
                             <span class="slider"></span>
-                        </label>
-                    </div>
+                        </div>
+                    </label>
                     <input class="header__btns-login" type="button" value="Login">
                     <input type="button" value="Sign up">
                 </div>
@@ -68,14 +69,14 @@
                     <div class="marquee">
                         <picture>
                             <!-- Изображение для широкого экрана (большое разрешение) -->
-                            <source media="(min-width: 1025px)" srcset="./source/img/line1/$.png">
+                            <source width="100" media="(min-width: 1025px)" srcset="./source/img/line1/$.png">
 
                             <!-- Изображение для узкого экрана (маленькое разрешение) -->
                             <img src="./source/img/line1/S$.png" alt="chip">
                         </picture>
                         <picture>
                             <!-- Изображение для широкого экрана (большое разрешение) -->
-                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Soccer.png">
+                            <source width="100" media="(min-width: 1025px)" srcset="./source/img/line1/Soccer.png">
 
                             <!-- Изображение для узкого экрана (маленькое разрешение) -->
                             <img src="./source/img/line1/sSoccer.png" alt="chip">
@@ -830,7 +831,7 @@
                 <div class="blog__wrapper">
                     <div class="blog__content">
                         <div class="article">
-                            <a  data-fancybox href="#hidden1">
+                            <a data-fancybox href="#hidden1">
                                 <div class="content">
                                     Payment methods: Skrill, Neteller, webmoney, Bank transfer
                                 </div>
@@ -840,7 +841,9 @@
                                 <h2>Any of your articles can be here</h2>
                                 <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, minima.</p>
                                 <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, minima.</p>
-                                <a class="hidden_links" href="https://potopus.github.io/rsschool-cv/#projects" target="_blank" rel="noopener noreferrer">&copy; All my projects can be viewed in my CV &copy; </a><br><br>
+                                <a class="hidden_links" href="https://potopus.github.io/rsschool-cv/#projects"
+                                    target="_blank" rel="noopener noreferrer">&copy; All my projects can be viewed in my
+                                    CV &copy; </a><br><br>
                                 <a href="tel:+375333052208"> Phone: +375-33-305-22-08</a><br><br>
                                 <a href="https://t.me/PoulBut">Link to Telegram: @PoulBut</a><br><br>
                                 <a href="mailto:paveldelo@yandex.ru"> Link to my email: paveldelo@yandex.ru</a>
@@ -910,8 +913,12 @@
         </div>
     </div>
     <script src="./source/js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind('[data-fancybox]', {
+            // Custom options for all galleries
+        });    
+    </script>
 </body>
 
 </html>
