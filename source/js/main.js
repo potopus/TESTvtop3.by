@@ -55,5 +55,5 @@ scrollableContainer.addEventListener('scroll', () => {
   const newBottom = containerHeight - scrollTop - absoluteBlockHeight;
 
   // Применяем новое значение к свойству bottom
-  absoluteBlock.style.bottom = `${newBottom}px`;
+//   absoluteBlock.style.bottom = `${newBottom}px`;
 });
