@@ -45,8 +45,14 @@
     }
 
     @include laptop {
-        width: 290%;
+        width: 300%;
         flex-basis: auto;
+    }
+    @include tablet{
+        width: 370%;
+    }
+    @include mobile{
+        width:890%;
     }
 }
 
@@ -68,6 +74,9 @@
     @include laptop {
         opacity: 20%;
     }
+    @include mobile{
+        width:910%;
+    }
 }
 
 .marquee {
@@ -81,13 +90,14 @@
         // display: flex;
         animation: marquee-mobile 5000ms linear infinite;
         -webkit-animation: marquee-mobile 5000ms linear infinite;
-        -moz-animation: marquee-mobile 5s linear infinite;
+        -moz-animation: marquee-mobile 5000ms linear infinite;
         /* FF <= 15 */
         -o-animation: marquee-mobile 5000ms linear infinite;
         /* Opera 12 */
         -ms-animation: marquee-mobile 5000ms linear infinite;
         animation-fill-mode: forwards;
         -webkit-animation-fill-mode: forwards;
+        width: 100%;
     }
 
     @include tablet {
@@ -102,8 +112,18 @@
     -webkit-animation-fill-mode: forwards;
 
     @include anima-size {
-        display: flex;
-        animation: marquee-mobileR 5s linear infinite;
+        // display: flex;
+        
+
+        animation: marquee-mobileR 5000ms linear infinite;
+        -webkit-animation: marquee-mobileR 5000ms linear infinite;
+        -moz-animation: marquee-mobileR 5000ms linear infinite;
+        /* FF <= 15 */
+        -o-animation: marquee-mobileR 5000ms linear infinite;
+        /* Opera 12 */
+        -ms-animation: marquee-mobileR 5000ms linear infinite;
+
+
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
     }
@@ -116,6 +136,8 @@
 
     @include anima-size {
         animation-duration: 12s;
+
+
         animation-fill-mode: forwards;
         -webkit-animation-fill-mode: forwards;
     }
