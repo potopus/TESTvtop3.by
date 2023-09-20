@@ -28,7 +28,6 @@
 .line1,
 .line2,
 .line3 {
-    // width: 22%;
     width: 100px;
     flex-basis: 100px;
 
@@ -52,7 +51,7 @@
         width: 370%;
     }
     @include mobile{
-        width:890%;
+        width:891%;
     }
 }
 
@@ -75,7 +74,8 @@
         opacity: 21%;
     }
     @include mobile{
-        width:910%;
+        width:911%;
+    }
 }
 
 .marquee {
@@ -86,7 +86,6 @@
     width: 100%;
 
     @include anima-size {
-        // display: flex;
         animation: marquee-mobile 5000ms linear infinite;
         -webkit-animation: marquee-mobile 5000ms linear infinite;
         -moz-animation: marquee-mobile 5000ms linear infinite;
@@ -99,12 +98,6 @@
 
         width: 100%;
     }
-
-    @include tablet {
-        // width: auto;
-    }
-
-
 }
 
 .line2 .marquee {
@@ -112,9 +105,6 @@
     -webkit-animation-fill-mode: forwards;
 
     @include anima-size {
-        // display: flex;
-        
-
         animation: marquee-mobileR 5000ms linear infinite;
         -webkit-animation: marquee-mobileR 5000ms linear infinite;
         -moz-animation: marquee-mobileR 5000ms linear infinite;
@@ -122,8 +112,6 @@
         -o-animation: marquee-mobileR 5000ms linear infinite;
         /* Opera 12 */
         -ms-animation: marquee-mobileR 5000ms linear infinite;
-
-
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
     }
@@ -136,8 +124,6 @@
 
     @include anima-size {
         animation-duration: 12s;
-
-
         animation-fill-mode: forwards;
         -webkit-animation-fill-mode: forwards;
     }
@@ -146,20 +132,15 @@
 
 
 .marquee img {
-    // width: 100px; /* Установите ширину изображений по вашему желанию */
     height: auto;
     width: 100%;
     margin: 0 0px;
-
-
     /* Расстояние между изображениями */
     @include anima-size {
         margin: 0 7px 0;
     }
-
     @include laptop {
         width: auto;
     }
 }
 
-/* Горизонтальная анимация для мобильных устройств  */
