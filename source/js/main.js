@@ -34,26 +34,36 @@ header__btns.addEventListener("click", function () {
     }
 })
 
+// document.addEventListener("DOMContentLoaded", function () {
+//    // Проверяем, была ли страница перезагружена в текущей сессии
+// if (!sessionStorage.getItem('pageReloaded')) {
+//     // Если нет, то очищаем кэш и устанавливаем флаг о перезагрузке
+//     sessionStorage.setItem('pageReloaded', 'true');
+//     window.location.reload(true);
+//   }
+//   });
 
-const scrollableContainer = document.querySelector('.blog__content');
-const absoluteBlock = document.querySelector('.dot__light-down');
+// Генерируем случайное число и добавляем его к URL-адресу ресурсов
+function bustCache() {
+    return Math.random().toString(36).substring(2);
+  }
+  
+  // Обновляем URL-адреса всех ресурсов с добавлением случайного параметра
+  function updateResourceUrls() {
+    const resources = document.querySelectorAll('link[rel="stylesheet"], script[src]');
+    resources.forEach(resource => {
+      const url = resource.href || resource.src;
+      if (url) {
+        const newUrl = url + (url.includes('?') ? '&' : '?') + '_=' + bustCache();
+        if (resource.href) {
+          resource.href = newUrl;
+        } else {
+          resource.src = newUrl;
+        }
+      }
+    });
+  }
+  
+  // Вызываем функцию обновления URL-адресов после загрузки страницы
+  document.addEventListener('DOMContentLoaded', updateResourceUrls);
 
-// scrollableContainer.addEventListener('scroll', () => {
-//   const scrollTop = scrollableContainer.scroll;
-//   // Измените положение .absolute-block на основе значения scrollTop
-//   absoluteBlock.style.top = `${scrollTop}px`;
-// });
-
-
-
-scrollableContainer.addEventListener('scroll', () => {
-  const scrollTop = scrollableContainer.scrollTop;
-  const containerHeight = scrollableContainer.clientHeight; // Высота видимой области контейнера
-  const absoluteBlockHeight = absoluteBlock.clientHeight; // Высота блока .absolute-block
-
-  // Рассчитываем новое значение для bottom
-  const newBottom = containerHeight - scrollTop - absoluteBlockHeight;
-
-  // Применяем новое значение к свойству bottom
-//   absoluteBlock.style.bottom = `${newBottom}px`;
-});
