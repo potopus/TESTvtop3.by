@@ -145,7 +145,7 @@ li {
     flex-direction: column;
     padding-top: 0.9%;
     min-height: 98.7%;
-    overflow-x: hidden;
+    overflow: hidden;
 
     @include anima-size {
         overflow-x: hidden;
@@ -381,7 +381,7 @@ li {
 }
 
 .main {
-    height: 20vh;
+    height: 81vh;
     display: flex;
     justify-content: space-between;
     gap: 4rem;

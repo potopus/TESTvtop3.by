@@ -20,6 +20,10 @@
         margin: 0 1%;
     }
 
+    @include laptop {
+        width: 100%;
+    }
+
     @include tablet {
         gap: 0.6rem;
     }
@@ -29,20 +33,23 @@
 .line2,
 .line3 {
     width: 100px;
-    height: 100%;
+    height: 242%;
     flex-basis: 100px;
 
     & picture {
         display: block;
-        margin: 24px 0;
+        // margin: 24px 0 0;
+        padding: 24px 0 0;
 
         @include desktop-wide {
-            margin: 12px 0;
+            // margin: 12px 0;
+            padding: 12px 0 0;
         }
 
         @include laptop {
             display: inline;
-            margin: 0px 7px;
+            margin: 0px 0px;
+            padding: 0 13.5px 0 0;
         }
     }
 
@@ -51,17 +58,11 @@
     }
 
     @include laptop {
-        width: 300%;
-        flex-basis: auto;
+        flex: 1;
+        width: max-content;
+        // flex-basis: auto;
     }
 
-    @include tablet {
-        width: 370%;
-    }
-
-    @include mobile {
-        width:899%;
-    }
 }
 
 .line1 {
@@ -82,32 +83,30 @@
     @include laptop {
         opacity: 21%;
     }
-
-    @include tablet {
-        width: 377%;
-    }
-
-    @include mobile {
-        width: 911%;
-    }
 }
 
 .marquee {
     white-space: nowrap;
-    animation: marquee 10s linear infinite;
+    animation: marquee 12s linear infinite;
+    -webkit-animation: marquee 12000ms linear infinite;
+    -moz-animation: marquee 12000ms linear infinite;
+    /* FF <= 15 */
+    -o-animation: marquee 12000ms linear infinite;
+    /* Opera 12 */
+    -ms-animation: marquee 12000ms linear infinite;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     width: 100%;
-    height: auto;
+    height: min-content;
 
     @include anima-size {
-        animation: marquee-mobile 5000ms linear infinite;
-        -webkit-animation: marquee-mobile 5000ms linear infinite;
-        -moz-animation: marquee-mobile 5000ms linear infinite;
+        animation: marquee-mobile 9000ms linear infinite;
+        -webkit-animation: marquee-mobile 9000ms linear infinite;
+        -moz-animation: marquee-mobile 9000ms linear infinite;
         /* FF <= 15 */
-        -o-animation: marquee-mobile 5000ms linear infinite;
+        -o-animation: marquee-mobile 9000ms linear infinite;
         /* Opera 12 */
-        -ms-animation: marquee-mobile 5000ms linear infinite;
+        -ms-animation: marquee-mobile 9000ms linear infinite;
         animation-fill-mode: forwards;
         -webkit-animation-fill-mode: forwards;
         width: 200%;
@@ -115,29 +114,45 @@
 }
 
 .line2 .marquee {
-    animation: marqueeD 5s linear infinite;
+    animation: marqueeD 8s linear infinite;
+    -webkit-animation: marqueeD 8000ms linear infinite;
+    -moz-animation: marqueeD 8000ms linear infinite;
+    /* FF <= 15 */
+    -o-animation: marqueeD 8000ms linear infinite;
+    /* Opera 12 */
+    -ms-animation: marqueeD 8000ms linear infinite;
     -webkit-animation-fill-mode: forwards;
 
     @include anima-size {
-        animation: marquee-mobileR 5000ms linear infinite;
-        -webkit-animation: marquee-mobileR 5000ms linear infinite;
-        -moz-animation: marquee-mobileR 5000ms linear infinite;
+        animation: marquee-mobileR 8500ms linear infinite;
+        -webkit-animation: marquee-mobileR 8500ms linear infinite;
+        -moz-animation: marquee-mobileR 8500ms linear infinite;
         /* FF <= 15 */
-        -o-animation: marquee-mobileR 5000ms linear infinite;
+        -o-animation: marquee-mobileR 8500ms linear infinite;
         /* Opera 12 */
-        -ms-animation: marquee-mobileR 5000ms linear infinite;
+        -ms-animation: marquee-mobileR 8500ms linear infinite;
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
+    }
+
+    @include laptop {
+        width: 100%;
     }
 }
 
 
 .line3 .marquee {
-    animation-duration: 8s;
+    animation-duration: 9s;
     -webkit-animation-fill-mode: forwards;
 
     @include anima-size {
-        animation-duration: 12s;
+        animation: marquee 12s linear infinite;
+        -webkit-animation: marquee-mobile 12000ms linear infinite;
+        -moz-animation: marquee-mobile 12000ms linear infinite;
+        /* FF <= 15 */
+        -o-animation: marquee-mobile 12000ms linear infinite;
+        /* Opera 12 */
+        -ms-animation: marquee-mobile 12000ms linear infinite;
         animation-fill-mode: forwards;
         -webkit-animation-fill-mode: forwards;
     }

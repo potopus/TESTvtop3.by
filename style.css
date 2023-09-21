@@ -122,7 +122,7 @@ li {
   flex-direction: column;
   padding-top: 0.9%;
   min-height: 98.7%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 @media screen and (max-width: 1024px) {
   .wrapper {
@@ -325,7 +325,7 @@ li {
 }
 
 .main {
-  height: 20vh;
+  height: 81vh;
   display: flex;
   justify-content: space-between;
   gap: 4rem;
@@ -856,6 +856,11 @@ div.fancybox__backdrop {
     margin: 0 1%;
   }
 }
+@media screen and (max-width: 1024px) {
+  .gaming__chip {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 768px) {
   .gaming__chip {
     gap: 0.6rem;
@@ -866,20 +871,20 @@ div.fancybox__backdrop {
 .line2,
 .line3 {
   width: 100px;
-  height: 100%;
+  height: 242%;
   flex-basis: 100px;
 }
 .line1 picture,
 .line2 picture,
 .line3 picture {
   display: block;
-  margin: 24px 0;
+  padding: 24px 0 0;
 }
 @media screen and (max-width: 1440px) {
   .line1 picture,
   .line2 picture,
   .line3 picture {
-    margin: 12px 0;
+    padding: 12px 0 0;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -887,7 +892,8 @@ div.fancybox__backdrop {
   .line2 picture,
   .line3 picture {
     display: inline;
-    margin: 0px 7px;
+    margin: 0px 0px;
+    padding: 0 13.5px 0 0;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -901,22 +907,8 @@ div.fancybox__backdrop {
   .line1,
   .line2,
   .line3 {
-    width: 300%;
-    flex-basis: auto;
-  }
-}
-@media screen and (max-width: 768px) {
-  .line1,
-  .line2,
-  .line3 {
-    width: 370%;
-  }
-}
-@media screen and (max-width: 320px) {
-  .line1,
-  .line2,
-  .line3 {
-    width: 899%;
+    flex: 1;
+    width: max-content;
   }
 }
 
@@ -941,34 +933,30 @@ div.fancybox__backdrop {
     opacity: 21%;
   }
 }
-@media screen and (max-width: 768px) {
-  .line3 {
-    width: 377%;
-  }
-}
-@media screen and (max-width: 320px) {
-  .line3 {
-    width: 911%;
-  }
-}
 
 .marquee {
   white-space: nowrap;
-  animation: marquee 10s linear infinite;
+  animation: marquee 12s linear infinite;
+  -webkit-animation: marquee 12000ms linear infinite;
+  -moz-animation: marquee 12000ms linear infinite;
+  /* FF <= 15 */
+  -o-animation: marquee 12000ms linear infinite;
+  /* Opera 12 */
+  -ms-animation: marquee 12000ms linear infinite;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
   width: 100%;
-  height: auto;
+  height: min-content;
 }
 @media screen and (max-width: 1024px) {
   .marquee {
-    animation: marquee-mobile 5000ms linear infinite;
-    -webkit-animation: marquee-mobile 5000ms linear infinite;
-    -moz-animation: marquee-mobile 5000ms linear infinite;
+    animation: marquee-mobile 9000ms linear infinite;
+    -webkit-animation: marquee-mobile 9000ms linear infinite;
+    -moz-animation: marquee-mobile 9000ms linear infinite;
     /* FF <= 15 */
-    -o-animation: marquee-mobile 5000ms linear infinite;
+    -o-animation: marquee-mobile 9000ms linear infinite;
     /* Opera 12 */
-    -ms-animation: marquee-mobile 5000ms linear infinite;
+    -ms-animation: marquee-mobile 9000ms linear infinite;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     width: 200%;
@@ -976,30 +964,47 @@ div.fancybox__backdrop {
 }
 
 .line2 .marquee {
-  animation: marqueeD 5s linear infinite;
+  animation: marqueeD 8s linear infinite;
+  -webkit-animation: marqueeD 8000ms linear infinite;
+  -moz-animation: marqueeD 8000ms linear infinite;
+  /* FF <= 15 */
+  -o-animation: marqueeD 8000ms linear infinite;
+  /* Opera 12 */
+  -ms-animation: marqueeD 8000ms linear infinite;
   -webkit-animation-fill-mode: forwards;
 }
 @media screen and (max-width: 1024px) {
   .line2 .marquee {
-    animation: marquee-mobileR 5000ms linear infinite;
-    -webkit-animation: marquee-mobileR 5000ms linear infinite;
-    -moz-animation: marquee-mobileR 5000ms linear infinite;
+    animation: marquee-mobileR 8500ms linear infinite;
+    -webkit-animation: marquee-mobileR 8500ms linear infinite;
+    -moz-animation: marquee-mobileR 8500ms linear infinite;
     /* FF <= 15 */
-    -o-animation: marquee-mobileR 5000ms linear infinite;
+    -o-animation: marquee-mobileR 8500ms linear infinite;
     /* Opera 12 */
-    -ms-animation: marquee-mobileR 5000ms linear infinite;
+    -ms-animation: marquee-mobileR 8500ms linear infinite;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
   }
 }
+@media screen and (max-width: 1024px) {
+  .line2 .marquee {
+    width: 100%;
+  }
+}
 
 .line3 .marquee {
-  animation-duration: 8s;
+  animation-duration: 9s;
   -webkit-animation-fill-mode: forwards;
 }
 @media screen and (max-width: 1024px) {
   .line3 .marquee {
-    animation-duration: 12s;
+    animation: marquee 12s linear infinite;
+    -webkit-animation: marquee-mobile 12000ms linear infinite;
+    -moz-animation: marquee-mobile 12000ms linear infinite;
+    /* FF <= 15 */
+    -o-animation: marquee-mobile 12000ms linear infinite;
+    /* Opera 12 */
+    -ms-animation: marquee-mobile 12000ms linear infinite;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
   }
@@ -1463,18 +1468,18 @@ template {
 
 @keyframes marquee {
   0% {
-    transform: translateY(0);
+    transform: translateY(0px);
   }
   100% {
-    transform: translateY(-102%);
+    transform: translateY(-100%);
   }
 }
 @keyframes marqueeD {
   0% {
-    transform: translateY(-130%);
+    transform: translateY(-100%);
   }
   100% {
-    transform: translateY(-28%);
+    transform: translateY(0%);
   }
 }
 @keyframes marquee-mobile {
@@ -1487,10 +1492,10 @@ template {
 }
 @keyframes marquee-mobileR {
   0% {
-    transform: translateX(-130%);
+    transform: translateX(-113%);
   }
   100% {
-    transform: translateX(-30%);
+    transform: translateX(-13%);
   }
 }
 

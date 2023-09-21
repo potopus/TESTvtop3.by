@@ -1,20 +1,20 @@
 @keyframes marquee {
     0% {
-        transform: translateY(0);
+        transform: translateY(0px);
     }
 
     100% {
-        transform: translateY(-102%);
+        transform: translateY(-100%);
     }
 }
 
 @keyframes marqueeD {
     0% {
-        transform: translateY(-130%);
+        transform: translateY(-100%);
     }
 
     100% {
-        transform: translateY(-28%);
+        transform: translateY(-0%);
     }
 }
 
@@ -30,10 +30,10 @@
 
 @keyframes marquee-mobileR {
     0% {
-        transform: translateX(-130%);
+        transform: translateX(-113%);
     }
 
     100% {
-        transform: translateX(-30%);
+        transform: translateX(-13%);
     }
 }
