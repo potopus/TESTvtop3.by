@@ -1,0 +1,33 @@
+.switch{
+    margin: auto;
+}
+
+/* Скрыть стандартный чекбокс */
+.switch input {
+    display: none;
+  }
+  
+  /* Стили для переключателя */
+  .switch .slider {
+    position: relative;
+    width: fit-content;
+    height: 20px;
+  }
+  
+  
+  /* Стили для метки (надписи) */
+  #languageLabel {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+  }
+
+.switch .slider::before {
+    content: "ru";
+    text-transform: uppercase;
+    transition: 0.7s;
+  }
+  
+  .switch input:checked + .slider::before {
+    content: "en";
+  }

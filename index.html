@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link  rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap"></noscript>
+
+    <link  rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" onload="this.onload=null;this.rel='stylesheet'">
+
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"></noscript>
+    <!-- <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" /> -->
+    <title>Test</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="header__wrapper">
+                <div class="logo">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img class="logo-img" src="./source/img/logo.png" alt="logo">
+                        <img class="shot-logo-img" src="./source/img/No_text_logo.png" alt="logo">
+                    </a>
+                </div>
+
+                <nav class="nav__menu ">
+                    <ul class="menu">
+                        <li> <a href="#">About us</a></li>
+                        <li> <a href="#">Brands</a></li>
+                        <li> <a href="#">Commisions</a></li>
+                        <li> <a href="#">News</a></li>
+                        <li> <a href="#">Contact us</a></li>
+                        <li> <a href="#">Careers</a></li>
+                    </ul>
+                </nav>
+                <div class=" header__btns ">
+                    <label class="header__toggle">
+                        <img class="toggle__pic" src="./source/img/planet.png" alt="language toggle pic">
+                        <div class="space"></div>
+                        <div class="switch">
+                            <input type="checkbox" id="languageToggle">
+                            <span class="slider"></span>
+                        </div>
+                    </label>
+                    <input class="header__btns-login" type="button" value="Login">
+                    <input type="button" value="Sign up">
+                </div>
+                <div class="burger-block">
+                    <img src="./source/img/planet.png" alt="" class="toggle__burger">
+                    <input type="checkbox" name="check-menu" id="check-menu" class="check-menu">
+                    <label class="label-burger" for="check-menu"></label>
+                    <div class="burger__icon"><span class="burger__icon-stripe"></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="title">
+                <div class="dot__light-up"></div>
+                <h1 class="h1">HOUSE OF <br><span class="title__color">GAMBLING</span></h1>
+                <div class="title__descript">Raise your ROI with direct advertiser</div>
+                <input type="button" class="title__btn" value="Become a Partner">
+            </div>
+            <div class="gaming__chip">
+                <div class="line1 ">
+                    <div class="marquee">
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source width="100" media="(min-width: 1025px)" srcset="./source/img/line1/$.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/S$.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source width="100" media="(min-width: 1025px)" srcset="./source/img/line1/Soccer.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sSoccer.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/M.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sM.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Shield.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sShield.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/$.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/S$.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Soccer.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sSoccer.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/M.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sM.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Shield.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sShield.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/$.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/S$.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Soccer.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sSoccer.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/M.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sM.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Shield.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sShield.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/$.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/S$.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Soccer.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sSoccer.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/M.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sM.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Shield.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sShield.png" alt="chip" width="50">
+                        </picture>
+                    </div>
+                    <div class="marquee">
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source width="100" media="(min-width: 1025px)" srcset="./source/img/line1/$.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/S$.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source width="100" media="(min-width: 1025px)" srcset="./source/img/line1/Soccer.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sSoccer.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/M.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sM.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Shield.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sShield.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/$.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/S$.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Soccer.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sSoccer.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/M.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sM.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Shield.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sShield.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/$.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/S$.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Soccer.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sSoccer.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/M.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sM.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Shield.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sShield.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/$.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/S$.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Soccer.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sSoccer.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/M.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sM.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Shield.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sShield.png" alt="chip" width="50">
+                        </picture>
+                    </div>
+                </div>
+                <div class="line2">
+                    <div class="marquee">
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/World.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sWorld.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/M.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sM.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/Timer.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sTimer.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/Crown.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sCrown.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/World.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sWorld.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/M.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sM.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/Timer.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sTimer.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/Crown.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sCrown.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/World.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sWorld.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/M.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sM.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/Timer.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sTimer.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/Crown.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sCrown.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/World.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sWorld.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/M.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sM.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/Timer.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sTimer.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/Crown.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sCrown.png" alt="chip" width="50">
+                        </picture>
+                    </div>
+                    <div class="marquee">
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/World.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sWorld.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/M.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sM.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/Timer.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sTimer.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/Crown.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sCrown.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/World.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sWorld.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/M.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sM.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/Timer.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sTimer.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/Crown.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sCrown.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/World.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sWorld.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/M.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sM.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/Timer.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sTimer.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/Crown.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sCrown.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/World.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sWorld.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/M.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sM.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/Timer.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sTimer.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/Crown.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sCrown.png" alt="chip" width="50">
+                        </picture>
+                    </div>
+                </div>
+                <div class="line3">
+                    <div class="marquee">
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/Crown.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sCrown.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line3/M.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line3/sM.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Shield.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sShield.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Soccer.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sSoccer.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Shield.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sShield.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/Crown.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sCrown.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line3/M.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line3/sM.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Shield.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sShield.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Soccer.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sSoccer.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Shield.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sShield.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/Crown.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sCrown.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line3/M.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line3/sM.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Shield.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sShield.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Soccer.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sSoccer.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Shield.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sShield.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/Crown.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sCrown.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line3/M.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line3/sM.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Shield.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sShield.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Soccer.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sSoccer.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Shield.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sShield.png" alt="chip" width="50">
+                        </picture>
+                    </div>
+                    <div class="marquee">
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/Crown.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sCrown.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line3/M.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line3/sM.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Shield.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sShield.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Soccer.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sSoccer.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Shield.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sShield.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/Crown.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sCrown.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line3/M.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line3/sM.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Shield.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sShield.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Soccer.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sSoccer.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Shield.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sShield.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/Crown.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sCrown.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line3/M.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line3/sM.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Shield.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sShield.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Soccer.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sSoccer.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Shield.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sShield.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line2/Crown.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line2/sCrown.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line3/M.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line3/sM.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Shield.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sShield.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Soccer.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sSoccer.png" alt="chip" width="50">
+                        </picture>
+                        <picture>
+                            <!-- Изображение для широкого экрана (большое разрешение) -->
+                            <source media="(min-width: 1025px)" srcset="./source/img/line1/Shield.png">
+
+                            <!-- Изображение для узкого экрана (маленькое разрешение) -->
+                            <img src="./source/img/line1/sShield.png" alt="chip" width="50">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="blog__title">blog</div>
+                <div class="blog__wrapper">
+                    <div class="blog__content">
+                        <div class="article">
+                            <a data-fancybox href="#hidden1">
+                                <div class="content">
+                                    Payment methods: Skrill, Neteller, webmoney, Bank transfer
+                                </div>
+                                <div class="public-date">10.02.2023</div>
+                            </a>
+                            <div style="display: none; width: 600px;" class="full__article" id="hidden1">
+                                <h2>Any of your articles can be here</h2>
+                                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, minima.</p>
+                                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, minima.</p>
+                                <a class="hidden_links" href="https://potopus.github.io/rsschool-cv/#projects"
+                                    target="_blank" rel="noopener noreferrer">&copy; All my projects can be viewed in my
+                                    CV &copy; </a><br><br>
+                                <a href="tel:+375333052208"> Phone: +375-33-305-22-08</a><br><br>
+                                <a href="https://t.me/PoulBut">Link to Telegram: @PoulBut</a><br><br>
+                                <a href="mailto:paveldelo@yandex.ru"> Link to my email: paveldelo@yandex.ru</a>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <a href="#">
+                                <div class="content">
+                                    Payment methods: Skrill, Neteller, webmoney, Bank transfer
+                                </div>
+                                <div class="public-date">10.02.2023</div>
+                            </a>
+                        </div>
+                        <div class="article">
+                            <a href="#">
+                                <div class="content">
+                                    Payment methods: Skrill, Neteller, webmoney, Bank transfer
+                                </div>
+                                <div class="public-date">10.02.2023</div>
+                            </a>
+                        </div>
+                        <div class="article">
+                            <a href="#">
+                                <div class="content">
+                                    Payment methods: Skrill, Neteller, webmoney, Bank transfer
+                                </div>
+                                <div class="public-date">10.02.2023</div>
+                            </a>
+                        </div>
+                        <div class="article">
+                            <a href="#">
+                                <div class="content">
+                                    Payment methods: Skrill, Neteller, webmoney, Bank transfer
+                                </div>
+                                <div class="public-date">10.02.2023</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dot__light-down"></div>
+        </div>
+        <div class="footer">
+            <div class="footer__wrapper">
+                <ul class="footer__menu">
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Brand Guide</a></li>
+                </ul>
+
+                <div class="footer-social">
+                    <div class="social__title">Our social media:</div>
+                    <ul class="footer__soc-menu">
+                        <li><a href="#"><img src="./source/img/pic_social/Twitter.png" alt="social_pic"></a></li>
+                        <li><a href="#"><img src="./source/img/pic_social/Facebook.png" alt="social_pic"></a></li>
+                        <li><a href="#"><img src="./source/img/pic_social/Instagram.png" alt="social_pic"></a></li>
+                        <li><a href="#"><img src="./source/img/pic_social/LinkedIn.png" alt="social_pic"></a></li>
+                        <li><a href="#"><img src="./source/img/pic_social/YouTube.png" alt="social_pic"></a></li>
+                        <li><a href="#"><img src="./source/img/pic_social/TikTok.png" alt="social_pic"></a></li>
+                        <li><a href="#"><img src="./source/img/pic_social/Telegram.png" alt="social_pic"></a></li>
+                        <li><a href="#"><img src="./source/img/pic_social/Vk.png" alt="social_pic"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./source/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind('[data-fancybox]', {
+            // Custom options for all galleries
+        });    
+    </script>
+</body>
+
+</html>
